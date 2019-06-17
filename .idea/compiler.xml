@@ -7,13 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com.center" />
-        <module name="spring-boot-parent" />
+        <module name="spring-boot-start" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.center" target="1.5" />
-      <module name="spring-boot-parent" target="1.5" />
+      <module name="spring-boot-parent" target="1.8" />
       <module name="spring-boot-silence" target="1.5" />
+      <module name="spring-boot-start" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-start" options="-parameters" />
+    </option>
   </component>
 </project>
